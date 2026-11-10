@@ -1,18 +1,22 @@
-# Verificações — CHECKPOINT
+# Verificações do projeto
 
-Executadas em 10/11/2026.
+Estas são as conferências registradas em **10/11/2026** antes da entrega da AOP2.
 
-- Cinco HTMLs: doctype, pt-BR, tags balanceadas, um head/body/header/nav/main/footer e um h1 por página: aprovados pelo script local. Esta checagem estrutural não substitui o Nu HTML Checker.
-- Menu: cinco opções idênticas, destinos relativos existentes e exatamente um aria-current correto por página: aprovado.
-- 72 referências locais de arquivos, incluindo CSS, JS e imagens: existentes.
-- Home: três imagens de card ligadas respectivamente a Notícias, Reviews e Dicas: aprovado.
-- Sintaxe JavaScript: aprovada com node:vm.
-- Chrome real: cinco páginas em 390, 768 e 1440 px (15 combinações): nenhuma rolagem horizontal e nenhuma imagem quebrada; cinco links e uma página ativa em todos os casos.
-- Menu em 390 px: abre por botão e expõe aria-expanded=true.
-- Formulário: vazio marca três campos e move foco ao nome; e-mail inválido e mensagem curta marcam os campos correspondentes; dados válidos mostram confirmação explícita de demonstração sem envio.
-- Console: nenhum erro próprio do site observado. A extensão externa linkedInSearch.js registra ReferenceError: _cookie is not defined; esse código não pertence ao projeto.
-- PDF: assinatura PDF e duas páginas confirmadas. Ambas renderizadas pelo Windows.Data.Pdf e inspecionadas visualmente: capa e links sem cortes ou sobreposição. Duas anotações de link URI conferidas, com repositório e site públicos reais. O documento permanece provisório pela ausência dos dados dos integrantes.
-- Publicação GitHub Pages: configurada em main / (root), com HTTPS. Repositório público criado e conteúdo commitado pelo conector GitHub. Cinco páginas públicas retornaram HTTP 200 e foram abertas no Chrome. Navegação entre as cinco páginas e links dos três cards exercitados.
-- Servidor estático local: cinco páginas retornaram HTTP 200.
+- As cinco páginas foram verificadas quanto à estrutura HTML básica e à presença do menu.
+- Os links entre as páginas e as três imagens clicáveis da Home foram conferidos.
+- Os arquivos locais de CSS, JavaScript e imagens foram encontrados (72 referências verificadas).
+- O layout foi testado nas larguras de 390 px, 768 px e 1440 px, sem imagens quebradas ou rolagem horizontal indevida nos testes registrados.
+- O menu para celular e a validação do formulário de contato foram testados.
+- As cinco páginas foram abertas na publicação do GitHub Pages durante a verificação.
 
-O projeto não exige npm install nem build. As verificações estruturais podem ser repetidas com node scripts/check.mjs. Os testes de navegador foram executados no Chrome conectado; não dependem de uma suíte instalada no projeto.
+## Para repetir a checagem dos arquivos
+
+Na pasta do projeto, com Node.js instalado:
+
+```bash
+node scripts/check.mjs
+```
+
+Esse script faz verificações estruturais e de caminhos. Ele não substitui abrir o site no navegador e conferir a aparência e a navegação.
+
+**Observação:** o formulário de Contatos é demonstrativo. Ele valida os dados no navegador, mas não envia mensagens. O PDF definitivo da atividade é entregue separadamente no ambiente da faculdade.
