@@ -25,4 +25,5 @@ for(const file of pages){
 }
 new vm.Script(await fs.readFile(path.join(root,'js/script.js'),'utf8'));
 const pdf=await fs.readFile(path.join(root,'output/pdf/CHECKPOINT-AOP2-PROVISORIO.pdf'));assert.equal((pdf.toString('latin1').match(/\/Type\s*\/Page\b/g)||[]).length,2);
+const raw=pdf.toString('latin1');assert.equal((raw.match(/\/Subtype\s*\/Link\b/g)||[]).length,2);for(const url of ['https://github.com/fabriciodna/checkpoint','https://fabriciodna.github.io/checkpoint/'])assert(raw.includes(url));
 console.log('APROVADO: 5 HTMLs, tags balanceadas, navegação, imagens, '+paths+' caminhos locais, sintaxe JS e PDF de 2 páginas.');

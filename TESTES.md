@@ -11,7 +11,8 @@ Executadas em 10/11/2026.
 - Menu em 390 px: abre por botão e expõe aria-expanded=true.
 - Formulário: vazio marca três campos e move foco ao nome; e-mail inválido e mensagem curta marcam os campos correspondentes; dados válidos mostram confirmação explícita de demonstração sem envio.
 - Console: nenhum erro próprio do site observado. A extensão externa linkedInSearch.js registra ReferenceError: _cookie is not defined; esse código não pertence ao projeto.
-- PDF: assinatura PDF e duas páginas confirmadas. Revisão visual e URLs finais: em andamento.
-- Publicação GitHub Pages: em andamento.
+- PDF: assinatura PDF e duas páginas confirmadas. Ambas renderizadas pelo Windows.Data.Pdf e inspecionadas visualmente: capa e links sem cortes ou sobreposição. Duas anotações de link URI conferidas, com repositório e site públicos reais. O documento permanece provisório pela ausência dos dados dos integrantes.
+- Publicação GitHub Pages: configurada em main / (root), com HTTPS. Repositório público criado e conteúdo commitado pelo conector GitHub. Cinco páginas públicas retornaram HTTP 200 e foram abertas no Chrome. Navegação entre as cinco páginas e links dos três cards exercitados.
+- Servidor estático local: cinco páginas retornaram HTTP 200.
 
 O projeto não exige npm install nem build. As verificações estruturais podem ser repetidas com node scripts/check.mjs. Os testes de navegador foram executados no Chrome conectado; não dependem de uma suíte instalada no projeto.

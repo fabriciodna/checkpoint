@@ -51,13 +51,15 @@ Repositório: https://github.com/fabriciodna/checkpoint
 
 Para publicar a partir da raiz: Settings → Pages → Deploy from a branch → main → / (root) → Save. O arquivo .nojekyll mantém a publicação como site estático. Não há etapa de build. Use o endereço real fornecido pelo GitHub depois que a implantação terminar.
 
-Status inicial: configuração e verificação de publicação em andamento. Consulte TESTES.md para o estado final desta entrega.
+Site publicado: https://fabriciodna.github.io/checkpoint/
+
+GitHub Pages configurado em main, raiz /, com HTTPS. As cinco páginas públicas foram verificadas.
 
 ## Documento acadêmico
 
 output/pdf/CHECKPOINT-AOP2-PROVISORIO.pdf tem exatamente duas páginas: capa e links. O HTML ao lado permite editar os campos e imprimir novamente em A4, escala 100%, margens definidas pelo documento e sem cabeçalhos/rodapés do navegador.
 
-Pendências: nomes completos e matrículas, em ordem alfabética; inserir os links reais confirmados. O arquivo está identificado como provisório e não deve ser entregue como versão definitiva enquanto houver marcadores.
+Pendências: nomes completos e matrículas, em ordem alfabética. Os dois links públicos reais já estão inseridos e clicáveis. O arquivo está identificado como provisório e não deve ser entregue como versão definitiva enquanto houver marcadores.
 
 ## Política editorial e imagens
 
